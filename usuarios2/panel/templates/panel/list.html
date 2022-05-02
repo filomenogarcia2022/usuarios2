@@ -1,0 +1,8 @@
+<h1> Listado de Usuarios</h1>
+<ul>
+    {% for usu in usuario %}
+    <li>
+        {{usu.nombre}} - {{usu.apellido}} - {{usu.email}}-<a href="{% url 'panel:delete' usu.pk}"></a>-<a href="{% url 'panel:delete' usu.pk}"></a>
+    </li>
+    {% endfor %}
+</ul>
